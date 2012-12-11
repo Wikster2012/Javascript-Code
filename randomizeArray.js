@@ -7,6 +7,7 @@
 //Zero index is undefined.
 //Author: Chris Cattano
 //Written: 12/11/12
+
 function randomizeArray(arrayLen){
 function removeA(arr) {
     var x, a = arguments, L = a.length, ax;
