@@ -5,7 +5,8 @@
 //testArray will be an array of length 11
 //Holding values 1 through 10 in a random order
 //Zero index is undefined.
-
+//Author: Chris Cattano
+//Written: 12/11/12
 function randomizeArray(arrayLen){
 function removeA(arr) {
     var x, a = arguments, L = a.length, ax;
