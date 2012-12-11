@@ -9,32 +9,32 @@
 //Written: 12/11/12
 
 function randomizeArray(arrayLen){
-function removeA(arr) {
-    var x, a = arguments, L = a.length, ax;
-    while (L > 1 ) {
-        x = a[--L];
-        while ((ax= arr.indexOf(x)) !== -1) {
-            arr.splice(ax, 1);
-        }
-    }
-    return arr;
-}
+	function removeA(arr) {
+		var x, a = arguments, L = a.length, ax;
+		while (L > 1 ) {
+			x = a[--L];
+			while ((ax= arr.indexOf(x)) !== -1) {
+				arr.splice(ax, 1);
+			}
+		}
+		return arr;
+	}
 
-var numLength = arrayLen;
-var numHolder = [];
+	var numLength = arrayLen;
+	var numHolder = [];
 
-for (var nhc = 1; numHolder.length<=numLength; nhc++){
-	numHolder[nhc]=nhc;
-}	
+	for (var nhc = 1; numHolder.length<=numLength; nhc++){
+		numHolder[nhc]=nhc;
+	}	
 
-var finalArray = [];
-var y=numLength;
+	var finalArray = [];
+	var y=numLength;
 
-for (var fac = 1; finalArray.length<=numLength; fac++){
-	var randNum = Math.floor(Math.random()*(y--)+1);
-	var erase = numHolder[randNum];
-	finalArray[fac]=erase;
-	removeA(numHolder, erase);
-}
-return finalArray;
+	for (var fac = 1; finalArray.length<=numLength; fac++){
+		var randNum = Math.floor(Math.random()*(y--)+1);
+		var erase = numHolder[randNum];
+		finalArray[fac]=erase;
+		removeA(numHolder, erase);
+	}
+	return finalArray;
 }
