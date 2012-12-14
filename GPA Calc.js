@@ -89,7 +89,7 @@ total = new Array (amount);
 total2 = 0;
 
 for (var i = 0; i < multiArray.length; i++){
-	total [i]=	multiArray [i] [0] * multiArray [i] [1];
+	total [i]= multiArray [i] [0] * multiArray [i] [1];
 	total2 = multiArray [i] [1] + total2;
 }
 
