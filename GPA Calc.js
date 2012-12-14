@@ -73,7 +73,7 @@ var result;
 
 for (var i = 0; i < multiArray.length; i++){
 
-letGr = prompt("Enter Letter Grade of class " + (i+1));
+letGr = prompt("Enter Letter Grade of class " + (i+1) + ". Please use capital letters only.");
 crHr = prompt ("Enter the amount of Credit Hours for class " + (i+1));
 
 decGr = letToNum(letGr);
@@ -97,4 +97,4 @@ for (var x = 0; x < total.length; x++){
 }
 gpa = (gpa/total2);
 
-console.log ("Your GPA is currently " + gpa);
+console.log ("Your GPA is currently " + (gpa).toFixed(2));
