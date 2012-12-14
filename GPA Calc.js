@@ -61,7 +61,7 @@ var result;
 		result = 0.67;
 		break;
 		
-		case "B+":
+		case "F":
 		result = 0;
 		break;
 	
