@@ -1,5 +1,7 @@
 //The following can be used to determine Grade Point average.
 //Intuitive program. Just Run, the rest is self explanatory.
+//Author: Chris Cattano
+//Made 12/14/12
 
 var amount = parseInt(prompt("Please enter the number of classes you are taking."));
 multiArray = new Array (amount);
@@ -85,6 +87,7 @@ multiArray [i] [1] = (crHr*1);
 
 total = new Array (amount);
 total2 = 0;
+
 for (var i = 0; i < multiArray.length; i++){
 	total [i]=	multiArray [i] [0] * multiArray [i] [1];
 	total2 = multiArray [i] [1] + total2;
@@ -95,6 +98,7 @@ var gpa =0;
 for (var x = 0; x < total.length; x++){
 	gpa = (gpa + total [x]);
 }
+
 gpa = (gpa/total2);
 
 console.log ("Your GPA is currently " + (gpa).toFixed(2));
